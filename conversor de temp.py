@@ -26,13 +26,12 @@ modelo.save('conversor de temp/celsius_a_fahrenheit.h5')
 
 '''
 
-#Para convertirlo a tensorflow.js, primero debemos instalar la biblioteca
+#Instalar tensorflowjs para convertir el h5 a un modelo que pueda cargar tensorflowjs en un explorador
 pip install tensorflowjs
-#Crear carpeta donde se colocaran los archivos resultantes
-mkdir carpeta_salida
-#Realizar la exportacion a la carpeta de salida
-tensorflowjs_converter --input_format keras celsius_a_fahrenheit.h5 carpeta_salida
-#Confirmar que en la carpeta de salida se hayan generado los archivos. Deben aparecer archivos "bin" y "json"
-ls carpeta_salida
+
+#Convertir el archivo h5 a formato de tensorflowjs
+mkdir tfjs_target_dir
+tensorflowjs_converter --input_format keras modelo_exportado.h5 tfjs_target_dir
+
 
 '''
