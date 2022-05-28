@@ -2,7 +2,6 @@ import tensorflow as tf
 from tensorflow import keras
 import numpy as np
 import cv2
-#https://drive.google.com/file/d/19L5nMcr0H8dlsCGVRTNENwh_yAAwtOO3/view
 
 categorias=["manzanas" , "ananas" , "kiwis"]
 imagenes=[] #aca vamos a almacenar las imagenes como una lista con cada valor de px
