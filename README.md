@@ -56,6 +56,12 @@ carpeta: clasificador de ropa
 ### numeros escritos a mano.py
 carpeta: identificador de numero
 
+### reconocedor de perros y gatos old
+carpeta detector de gyp old
+
+### reconocedor de perros y gatos
+carpeta detector de gyp
+
 ### Inicia un servidor en la carpeta
 Este proyecto utiliza un modelo de Tensorflow.js, el cual para cargarse requiere que el acceso sea por medio de http/https.
 Para eso puedes usar cualquier servidor, pero aquí hay una forma de hacerlo:
